@@ -1,0 +1,30 @@
+{
+  "name": "e-commerce-back-end",
+  "version": "1.0.0",
+  "description": "back end for an e-commerce site using Express.js API's and configured to use Sequelize to interact with a MySQL database.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyoung0613/E-Commerce-Back-End.git"
+  },
+  "keywords": [
+    "E-Commerce"
+  ],
+  "author": "jyoung0613",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jyoung0613/E-Commerce-Back-End/issues"
+  },
+  "homepage": "https://github.com/jyoung0613/E-Commerce-Back-End#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.2.5",
+    "mysql2": "^2.3.1",
+    "sequelize": "^6.7.0"
+  }
+}
