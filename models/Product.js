@@ -11,6 +11,7 @@ Product.init(
   {
     id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
@@ -19,12 +20,19 @@ Product.init(
       allowNull: false,
     },
     price: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+      type: DataTypes.DECIMAL,
+      allowNull: false,
+      validate: {
+        isDECIMAL: true
+      }
     },
     stock: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: true,
+      defaultValue: 10,
+      validate: {
+        len: [1]
+      }
     },
     category_id: {
       type: DataTypes.INTEGER,
