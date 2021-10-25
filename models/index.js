@@ -31,6 +31,7 @@ Tag.belongsToMany(Product, {
     model: ProductTag,
     unique: false,
   },
+  as: 'products_tagged',
   foreignKey: 'tag_id',
 });
 
